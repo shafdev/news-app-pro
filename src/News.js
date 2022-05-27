@@ -4,35 +4,10 @@ import NewsFrame from "./Newsframe";
 
 
 function News(){
-    const [search,setSearch] = useState({topic:'India',category:'sports'})
+    const [search,setSearch] = useState({category:'sports'})
     const [news,setNews] = useState([])
 
-    // var date = new Date()
-    // var year = date.getFullYear()
-    // var day = date.getDate()
-    // var month = date.getMonth()+1
-    // var month = (month.toString().length)===1 ? 
-    //             `0${month}`:`${month}`
-    // var day = (day.toString().length)===1 ? 
-    //               `0${day}`:`${day}`
-    // var datestring = `${year}-${month}-${day}`
-    // console.log(datestring)
-    // console.log(search.category)
-    // var url = 'https://newsapi.org/v2/everything?' +
-    // `q=${search.topic}&` +
-    // `from=${datestring}&` +
-    // 'sortBy=popularity&' +
-    // 'apiKey=c410f240269d4d2ca76407f196169a7b';
-
-    // key='c6e71a296e8d6448cad4939c74e85e5f0'
-    //key2 'apiKey=c410f240269d4d2ca76407f196169a7b' 
-    // key3 : 2ef7012b678140579ba81caca5c07313
-    //key4: d01b19d0c62748d595e6f3fe005403a1
-    // https://newsapi.org/v2/everything?q=entertainment&apiKey=d01b19d0c62748d595e6f3fe005403a1
-    // https://newsapi.org/v2/top-headlines/sources?apiKey=d01b19d0c62748d595e6f3fe005403a1
-    // https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=d01b19d0c62748d595e6f3fe005403a1
     
-    // var url = `https://newsapi.org/v2/top-headlines?country=in&category=${search.category}&apiKey=d01b19d0c62748d595e6f3fe005403a1`
     var url = `https://news-back-vic.herokuapp.com/${search.category}`
     async function getNews(){
         try{
@@ -55,7 +30,7 @@ function News(){
     
     const handleChange =(e)=>{
         // console.log(e.target.value)
-        console.log(e.target.name)
+        // console.log(e.target.name)
         setSearch(prev=>{
             return{
                 ...prev,
@@ -80,19 +55,10 @@ function News(){
         
     }
     console.log(search)
-    // const [category,setCaregory] = useState()
+
     return(
         <>
         <form onSubmit={handleSubmit}>
-            <input
-                type='text'
-                placeholder='Topic'
-                name='topic'
-                onChange={handleChange}    
-                value={search.topic}                                  
-            />
-            {/* value={myCar}onChange={handleChange} */}
-
             <select  
                 name = 'category'
                 value={search.category} 
@@ -119,7 +85,6 @@ function News(){
                 
             </div>
             
-            {/* hello world */}
         </>
     )
 }
