@@ -33,15 +33,21 @@ function News(){
     // https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=d01b19d0c62748d595e6f3fe005403a1
     
     // var url = `https://newsapi.org/v2/top-headlines?country=in&category=${search.category}&apiKey=d01b19d0c62748d595e6f3fe005403a1`
-    var url = 'https://news-back-vic.herokuapp.com/'
+    var url = `https://news-back-vic.herokuapp.com/${search.category}`
     async function getNews(){
         try{
             var result =  await axios.get(url);
-       console.log(result.data.articles)
-            setNews(result.data.articles)
+        console.log(result.data.articles)
+            if(result.data.articles){
+                setNews(result.data.articles)
+            }if(!result.data.articles){
+                getNews()
+            }
+            
 
         }catch(err){
             throw new Error(err);
+            console.log(err)
         }  
     }
     
