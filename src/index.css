@@ -1,16 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'News Cycle', sans-serif;
+  /* font-family: 'Noto Sans', sans-serif; */
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 article{
   width: 400px;
@@ -39,6 +36,28 @@ article{
   align-items: center;
 }
 
+.titlea{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+a:hover {
+  color: rgb(110, 118, 194);
+}
+/* a:hover {
+  background-color: rgb(73, 49, 138);
+} */
+
+.read-btn{
+  background: transparent;
+  border-color: transparent;
+  color:rgb(20, 15, 15);
+  font-weight: 600;
+}
+
+.read-btn:hover{
+  color: rgb(110, 118, 194);
+}
 .news_article{
   /* background-color: rgb(35, 168, 124); */
 
