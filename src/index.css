@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+article{
+  width: 400px;
+}
+
+.newsimg{
+  width: 100%;
+  border-radius: 0.6rem;
+}
+.news_article{
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* align-self: center; */
+
+}
+
+.news{
+  
+
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news_article{
+  /* background-color: rgb(35, 168, 124); */
+
+}
