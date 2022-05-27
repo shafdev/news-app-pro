@@ -32,8 +32,8 @@ function News(){
     // https://newsapi.org/v2/top-headlines/sources?apiKey=d01b19d0c62748d595e6f3fe005403a1
     // https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=d01b19d0c62748d595e6f3fe005403a1
     
-    var url = `https://newsapi.org/v2/top-headlines?country=in&category=${search.category}&apiKey=d01b19d0c62748d595e6f3fe005403a1`
-    
+    // var url = `https://newsapi.org/v2/top-headlines?country=in&category=${search.category}&apiKey=d01b19d0c62748d595e6f3fe005403a1`
+    var url = 'https://news-back-vic.herokuapp.com/'
     async function getNews(){
         try{
             var result =  await axios.get(url);
