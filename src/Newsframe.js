@@ -31,9 +31,11 @@ function NewsFrame(props){
                 : ' . . . ':''}
             </p>
 
-            
-            <p>Source: {url.split('/')[2]}</p>
-            <p>{author}</p>
+            <a href={url} className="source-url">
+            <p className="source">Source: {url.split('/')[2]}</p>
+            </a>      
+
+            <p className="author">{author}</p>
             </div>
             <img className="news_img" src={urlToImage? urlToImage: defaultImageUrl}/>
             

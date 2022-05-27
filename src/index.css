@@ -6,12 +6,13 @@ body{
 
 
 article{
-  width: 60vw;
+  width: 70vw;
   /* background-color: blueviolet; */
   display: flex;
   margin: 1rem;
   /* padding: 10px; */
   /* background-color: aqua; */
+  gap: 10px;
 }
 
 
@@ -26,17 +27,19 @@ h2,p{
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  /* margin-right: 1.5rem; */
   /* padding: 1rem; */
   /* align-items: center; */
   justify-items: center;
   align-content: center;
   justify-content: center;
-
+  
 }
 
 .news_img{
   width: 40%;
   object-fit: contain;
+  /* background-color: rgb(17, 0, 255); */
   /* height: auto; */
   /* grid-column: 2/6; */
   /* border-radius: 0.6rem; */
@@ -99,27 +102,42 @@ a:hover {
   background: rgb(152, 158, 211);
   /* color: rgb(37, 32, 32); */
 }
-
-
+.source-url{
+  text-decoration: none;
+  color: rgb(71, 72, 85);
+}
+.author{
+  font-size: .8rem;
+}
 @media screen and (max-width: 720px) {
   
   article{
     width: 100vw;
-    /* background-color: blueviolet; */
     display: flex;
-    margin: 1rem;
+    margin: 0rem;
     flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
     /* padding: 10px; */
     /* background-color: aqua; */
   }
-  
+  .titlea{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+  }
+  .source-url{
+    text-decoration: none;
+    color: rgb(110, 118, 194);
+  }
   .news_content{
     width: 100vw;
     /* color:blue; */
     /* background-color: aqua; */
     /* display: flex; */
     /* flex-direction: column; */
-    margin: 1rem;
+    margin: 0rem;
     /* padding: 1rem; */
     /* align-items: center; */
     /* justify-items: center; */
@@ -127,12 +145,18 @@ a:hover {
     /* justify-content: center; */
   
   }
-
+  
+.source{
+  font-size: .8rem;
+}
+.author{
+  display: none;
+}
   .news_img{
     width: 100%;
     object-fit: contain;
     /* margin: 1rem; */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* height: auto; */
     /* grid-column: 2/6; */
     /* border-radius: 0.6rem; */
@@ -141,8 +165,13 @@ a:hover {
 
 
   h2,p{
-    color: rgb(73, 182, 40);
-    padding: 1rem;
+    /* margin: 0; */
+    /* color: rgb(73, 182, 40); */
+    /* padding: auto; */
+    /* margin-right:1rem ; */
+    /* margin-left: 5px; */
+    /* padding: 0.5rem; */
+    text-align: left;
   }
   
 }
