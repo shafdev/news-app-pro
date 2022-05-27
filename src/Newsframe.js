@@ -17,14 +17,13 @@ function NewsFrame(props){
             <h2>{title}</h2>
             </a>
             <p>
-            
-                {readMore ?  description  : description.substring(0,150) }
+             {readMore ?  description  :   description ? description.substring(0,150) :'' }
 
-                {description.length > 150 ? 
+                { description? description.length > 150 ? 
                     <button onClick={handledescription} className='read-btn'>
                             {readMore ? 'less' : 'Read More'}
                     </button>
-                : ' . . . '}
+                : ' . . . ':''}
             </p>
 
 

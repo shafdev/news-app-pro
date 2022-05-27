@@ -59,7 +59,7 @@ function News(){
     return(
         <>
         <form onSubmit={handleSubmit}>
-            <select  
+            <select  className="select"
                 name = 'category'
                 value={search.category} 
                 onChange={handleChange}>

@@ -62,3 +62,32 @@ a:hover {
   /* background-color: rgb(35, 168, 124); */
 
 }
+option{
+  /* color: aquamarine; */
+  font-family: inherit;
+}
+
+.select {
+  /* background-color: transparent; */
+  /* border-color: transparent; */
+  border: 1px solid  rgb(110, 118, 194);
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 0.6rem;
+}
+
+.select {
+  /* // ...existing styles */
+  /* display: grid; */
+  /* gap: 1rem;
+  color: aqua;
+  border-radius: 20px; */
+}
+/* select:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+} */
+/* select div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+} */
