@@ -1,52 +1,74 @@
-body {
+body{
   margin: 0;
   font-family: 'News Cycle', sans-serif;
   /* font-family: 'Noto Sans', sans-serif; */
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 article{
-  width: 400px;
+  width: 60vw;
+  /* background-color: blueviolet; */
+  display: flex;
+  margin: 1rem;
+  /* padding: 10px; */
+  /* flex-direction: column; */
+  /* background-color: aqua; */
+
 }
 
-.newsimg{
-  width: 100%;
-  border-radius: 0.6rem;
+
+h2,p{
+  margin: 0;
+  padding: 0.5rem;
 }
-.news_article{
-  /* justify-content: center; */
+.news_content{
+  /* color:blue; */
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  /* padding: 1rem; */
   /* align-items: center; */
-  /* align-content: center; */
-  /* align-self: center; */
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
 
 }
 
-.news{
-  
-
+.news_img{
+  width: 40%;
+  object-fit: contain;
+  /* height: auto; */
+  /* grid-column: 2/6; */
+  /* border-radius: 0.6rem; */
 }
+
 
 .App{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+  
 }
 
+.news_article{
+
+
+}
+.news{
+  margin: 1.3rem;
+  /* padding: 2rem; */
+}
 .titlea{
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 a:hover {
   color: rgb(110, 118, 194);
 }
-/* a:hover {
-  background-color: rgb(73, 49, 138);
-} */
+
 
 .read-btn{
   background: transparent;
@@ -58,36 +80,25 @@ a:hover {
 .read-btn:hover{
   color: rgb(110, 118, 194);
 }
-.news_article{
-  /* background-color: rgb(35, 168, 124); */
-
-}
-option{
-  /* color: aquamarine; */
-  font-family: inherit;
-}
 
 .select {
-  /* background-color: transparent; */
-  /* border-color: transparent; */
+
   border: 1px solid  rgb(110, 118, 194);
-  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
   background-color: #fff;
   cursor: pointer;
   border-radius: 0.6rem;
 }
 
-.select {
-  /* // ...existing styles */
-  /* display: grid; */
-  /* gap: 1rem;
-  color: aqua;
-  border-radius: 20px; */
+
+.click-btn{
+  border-radius: 1rem;
+  background: rgb(110, 118, 194);
+  border: 1px solid rgb(110, 118, 194);
+  color: rgb(255, 255, 255);
 }
-/* select:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-} */
-/* select div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-} */
+.click-btn:hover{
+  background: rgb(152, 158, 211);
+  /* color: rgb(37, 32, 32); */
+}
+
+

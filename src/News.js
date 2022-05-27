@@ -72,9 +72,9 @@ function News(){
                     <option value="science" >science</option>
             </select>
 
-            <button>Search News</button>
+            <button className="click-btn">Search</button>
         </form>
-            <div>
+            <div className='news'>
             {news.map((item) =>{
                 return(<div key={item.url}>
                          <NewsFrame  news = {item}/>
