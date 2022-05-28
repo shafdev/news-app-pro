@@ -72,6 +72,7 @@ a:hover {
 .select {
 
   border: 1px solid  rgb(110, 118, 194);
+  /* border: 1px solid  rgb(173, 106, 17); */
   background-color: #fff;
   cursor: pointer;
   border-radius: 0.6rem;
@@ -80,7 +81,8 @@ a:hover {
 
 .click-btn{
   border-radius: 1rem;
-  background: rgb(110, 118, 194);
+  /* background: rgb(110, 118, 194); */
+  background: rgb(75, 185, 47);
   border: 1px solid rgb(110, 118, 194);
   color: rgb(255, 255, 255);
 }
