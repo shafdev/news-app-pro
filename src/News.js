@@ -12,7 +12,7 @@ function News(){
     async function getNews(){
         try{
             var result =  await axios.get(url);
-        console.log(result.data.articles)
+        // console.log(result.data.articles)
             if(result.data.articles){
                 setNews(result.data.articles)
             }if(!result.data.articles){
@@ -26,11 +26,9 @@ function News(){
         }  
     }
     
-    // console.log(news)
     
     const handleChange =(e)=>{
-        // console.log(e.target.value)
-        // console.log(e.target.name)
+
         setSearch(prev=>{
             return{
                 ...prev,
@@ -48,13 +46,13 @@ function News(){
 
     const handleSubmit =(e)=>{
         e.preventDefault()
-        console.log('submitted')
+        // console.log('submitted')
         getNews()
         // console.log(search.topic)
         
         
     }
-    console.log(search)
+    // console.log(search)
 
     return(
         <>
