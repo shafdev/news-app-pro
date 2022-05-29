@@ -8,15 +8,21 @@ function News(){
     const [news,setNews] = useState([])
 
     
-    var url = `https://news-back-vic.herokuapp.com/${search.category}`
+    
     async function getNews(){
+        var url = `https://news-back-vic.herokuapp.com/${search.category}`
+        console.log(search.category)
+        
         try{
             var result =  await axios.get(url);
-        // console.log(result.data.articles)
+            // console.log(result.data.articles)
             if(result.data.articles){
                 setNews(result.data.articles)
-            }if(!result.data.articles){
+                console.log('getNews called')
+            }
+            if(!result.data.articles){
                 getNews()
+                console.log('getNews called from no data')
             }
             
 
@@ -35,12 +41,13 @@ function News(){
                 [e.target.name]:e.target.value,
             }
         })
+        // getNews()
         
     }
     
     useEffect(()=>{
         getNews()
-    },[])
+    },[search])
 
     
 
@@ -70,7 +77,7 @@ function News(){
                     <option value="science" >science</option>
             </select>
 
-            <button className="click-btn">Search</button>
+            {/* <button className="click-btn">Search</button> */}
         </form>
             <div className='news'>
             {news.map((item) =>{
